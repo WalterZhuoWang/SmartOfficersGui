@@ -99,7 +99,7 @@ export default {
       this.$refs[user].validate((valid) => {
         if (valid) {
           console.log(this.user.username + ' ' + this.user.password)
-          this.$router.replace('/home')
+          this.$router.replace('/')
           this.$Message.success('Success!')
         } else {
           this.$Message.error('The username or password is not correct!')
